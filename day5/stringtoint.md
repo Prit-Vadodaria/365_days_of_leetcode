@@ -87,23 +87,3 @@ public:
     }
 };
 ```
-🔍 Approach & Explanation
-Whitespace Trimming: Skip all leading whitespace characters.
-Sign Detection: Handle '+' or '-' to determine the sign of the number.
-Digit Parsing: Convert characters to integers and build the number.
-Overflow Control:
-   Use a long to temporarily store the number during conversion.
-   Check bounds on every digit addition:
-      Return INT_MAX if value exceeds 32-bit signed max.
-      Return INT_MIN if value falls below signed min.
-Return the final value after applying the correct sign.
-
----
-
-📌 Constraints
-0 <= s.length <= 200
-s consists of:
-   Upper and lowercase English letters
-   Digits 0-9
-   Whitespace ' '
-   Characters '+', '-', and '.'
