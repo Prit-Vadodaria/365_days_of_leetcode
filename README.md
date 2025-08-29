@@ -1,1 +1,1 @@
-# 365shadesofcode
+# 365 day of solving leetcode problems
